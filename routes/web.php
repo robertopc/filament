@@ -14,4 +14,8 @@ use App\Http\Livewire\User;
 |
 */
 
-Route::get('/', User::class);
+Route::get('/', function(){
+    return view('welcome');
+});
+
+Route::get('/cadastro', User::class);
